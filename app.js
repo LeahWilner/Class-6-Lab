@@ -36,7 +36,7 @@ and &&
 
 //take in user input
 let userName = prompt('What is your name?');
-let nameConfirm = confirm('Is that really your name?');
+let nameConfirm = confirm('Please confirm that is your name?');
 console.log('What is our input for user name: ', userName);
 console.log('did they confirm yes? ',nameConfirm);
 let time = prompt('what hour is it? In Military time.');
@@ -49,11 +49,11 @@ let message;
 
 
 if(time <= 11){
-  message = 'Good Morning';
+  message = 'Good Morning, Bon Matin';
 }else if(time > 12 && time <= 18){
-  message = 'Good Afternoon';
+  message = 'Good Afternoon, Bon Journee';
 } else if(time > 18 && time < 24) {
-  message = 'Good Evening';
+  message = 'Good Evening, Bon Soir';
 } else {
   message = 'hello, I dont know your time.';
 }
